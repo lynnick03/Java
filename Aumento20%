@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner ler = new Scanner(System.in);
+    float sal, aum;
+    String nome;
+    System.out.println("Digite o salário do funcionário: ");
+    
+    
+   while(true){
+    sal = ler.nextFloat(); 
+     if(sal < 0.0 || sal >= 500.00){
+       System.out.println("Seu salário é "+sal+ " e você não tem direito a aumento.");
+       break;
+     }
+     
+       aum = sal+(sal*0.20f);
+       System.out.println("Seu salário com aumento é:" +aum );
+      
+   
+   }
+  }
+}
