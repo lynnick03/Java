@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner ler = new Scanner(System.in);
+    int num,i;
+    System.out.println("Informe 10 numeros: ");
+   
+   for(i=0; i <10; i++){
+   num = ler.nextInt();
+      if(num%2==0)
+        System.out.println("Par");
+        else
+        System.out.println("Impar");
+   } 
+  }
+}
