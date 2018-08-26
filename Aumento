@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner ler = new Scanner(System.in);
+    float sal, porce,aumento;
+    System.out.println("Informe seu salário: ");
+    sal = ler.nextFloat();
+    System.out.println("Informe a porcentagem de aumento: ");
+    porce = ler.nextFloat();
+    aumento =sal+(sal*porce);
+    System.out.println("Seu salário com aumento é:" +aumento);
+  }
+}
