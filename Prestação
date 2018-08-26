@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner ler = new Scanner(System.in);
+    float sal,permitida,desejada;
+    
+
+    System.out.println("Informe seu salário bruto: ");
+    sal = ler.nextFloat();
+  
+    System.out.println("Informe o valor da prestação que deseja: ");
+    desejada = ler.nextFloat();
+
+    permitida = sal*0.30f;
+
+    if (desejada <= permitida){
+      System.out.println("Empréstimo permitido");
+    }else{
+      System.out.println("Empréstimo nao foi permitido");
+    }
+
+  
+  }
+}
