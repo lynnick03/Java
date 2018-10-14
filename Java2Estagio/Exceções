@@ -8,3 +8,28 @@ public class UsuarioNaoLogado extends RuntimeException {
         super(message);
     }
 }
+
+public class Menor extends Exception {
+    private static final long serialVersionUID = -4664404648722825167L;
+ 
+    private String msg;
+ 
+    public Menor(String msg, String causa) {
+        super(msg, new Exception(causa));
+        this.msg = msg;
+    }
+ 
+    public String getMsg() {
+        return msg;
+    }
+}
+
+public class NaoBug extends Exception {
+   
+   
+   public String getMessage() {
+      return "Não existe palavra Bug em sua frase";
+      
+   }
+
+   }
