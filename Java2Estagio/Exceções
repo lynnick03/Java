@@ -1,0 +1,10 @@
+public class UsuarioNaoLogado extends RuntimeException {
+
+    public UsuarioNaoLogado (){
+        super();
+    }
+
+    public UsuarioNaoLogado (String message){
+        super(message);
+    }
+}
