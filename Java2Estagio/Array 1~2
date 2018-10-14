@@ -1,0 +1,26 @@
+
+public class Principal {
+	public static void main(String[] args) {
+		
+		int[] numero = new int[300];
+		
+		for(int i =0; i< 300; i++){
+			numero[i]=45;
+		}
+	for( int i = 0,j=0; i< numero.length; i++,j++){
+		
+		System.out.println(j+"- forma 1:"+numero[i]);
+	}
+for( int i = 0,j=0; i< 300; i++,j++){
+		
+		System.out.println(j+"- forma 2:"+numero[i]);
+	}
+
+	for (int x: numero){
+		
+		System.out.println("3 forma:"+x);
+		
+	}
+
+}
+}
